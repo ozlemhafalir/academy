@@ -9,6 +9,8 @@ import Categories from "./pages/Categories";
 import Footer from "./components/Footer";
 import Category from "./components/Category";
 import Instructor from "./components/Instructor";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 
 function App() {
     return (
@@ -21,6 +23,8 @@ function App() {
                     <Route exact path="/category/:slug" element={<Category/>}/>
                     <Route exact path="/instructors" element={<Instructors/>}/>
                     <Route exact path="/instructor/:slug" element={<Instructor/>}/>
+                    <Route exact path="/signin" element={<Signin/>}/>
+                    <Route exact path="/signup" element={<Signup/>}/>
                 </Routes>
             </Container>
             <Footer/>
